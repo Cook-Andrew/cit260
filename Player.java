@@ -7,4 +7,6 @@ public class Player {
     public String getName() {
         return "Janken";
     }
+    public void setName(String name) {
+    }
 }

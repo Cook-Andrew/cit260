@@ -254,7 +254,7 @@
 											"top": 320,
 											"width": 202.68701171875,
 											"height": 13,
-											"text": "+setName(name: String): void",
+											"text": "+setName(name: int): void",
 											"horizontalAlignment": 0
 										}
 									],
@@ -429,6 +429,7 @@
 											"model": {
 												"$ref": "AAAAAAFw8LH/OuBOkBc="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 61,
 											"top": 454,
@@ -448,7 +449,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 469,
+											"top": 456,
 											"width": 217.115234375,
 											"height": 13,
 											"text": "-name: String = Janken",
@@ -459,7 +460,7 @@
 									"left": 56,
 									"top": 449,
 									"width": 227.115234375,
-									"height": 38
+									"height": 25
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -482,7 +483,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 492,
+											"top": 479,
 											"width": 217.115234375,
 											"height": 13,
 											"text": "+attack(): int",
@@ -499,7 +500,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 507,
+											"top": 494,
 											"width": 217.115234375,
 											"height": 13,
 											"text": "+setName(name: String): void",
@@ -514,9 +515,10 @@
 											"model": {
 												"$ref": "AAAAAAFw8MM1geqNnsc="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 522,
+											"top": 509,
 											"width": 217.115234375,
 											"height": 13,
 											"text": "+getName(): String",
@@ -531,9 +533,10 @@
 											"model": {
 												"$ref": "AAAAAAFw8Lx2muiuPlo="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 537,
+											"top": 509,
 											"width": 217.115234375,
 											"height": 13,
 											"text": "+getScore(): int",
@@ -548,9 +551,10 @@
 											"model": {
 												"$ref": "AAAAAAFw8LyGtOjkUBA="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 61,
-											"top": 552,
+											"top": 509,
 											"width": 217.115234375,
 											"height": 13,
 											"text": "+setScore(score: int)",
@@ -559,9 +563,9 @@
 									],
 									"font": "Arial;13;0",
 									"left": 56,
-									"top": 487,
+									"top": 474,
 									"width": 227.115234375,
-									"height": 83
+									"height": 38
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -601,7 +605,7 @@
 							"left": 56,
 							"top": 424,
 							"width": 227.115234375,
-							"height": 146,
+							"height": 88,
 							"nameCompartment": {
 								"$ref": "AAAAAAFw0bTfFxRy754="
 							},
@@ -762,6 +766,7 @@
 											"model": {
 												"$ref": "AAAAAAFw8LaJEObmOnw="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 293,
 											"top": 477,
@@ -781,7 +786,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 293,
-											"top": 492,
+											"top": 479,
 											"width": 154.27978515625,
 											"height": 13,
 											"text": "+getTagline(): String",
@@ -792,7 +797,7 @@
 									"left": 288,
 									"top": 472,
 									"width": 164.27978515625,
-									"height": 38
+									"height": 25
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1027,6 +1032,7 @@
 											"model": {
 												"$ref": "AAAAAAFw0c7dHhoNQAM="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
 											"left": 445,
 											"top": 275,
@@ -1046,7 +1052,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 290,
+											"top": 275,
 											"width": 528.556640625,
 											"height": 13,
 											"text": "+menu(player: Player, enemy: Npc): void",
@@ -1063,7 +1069,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 305,
+											"top": 290,
 											"width": 528.556640625,
 											"height": 13,
 											"text": "+newGame(player: Player, enemy: Npc): void",
@@ -1080,7 +1086,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 320,
+											"top": 305,
 											"width": 528.556640625,
 											"height": 13,
 											"text": "+displayHighScores(): void",
@@ -1097,7 +1103,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 335,
+											"top": 320,
 											"width": 528.556640625,
 											"height": 13,
 											"text": "+combat(player: Player, enemy: Npc): void",
@@ -1108,7 +1114,7 @@
 									"left": 440,
 									"top": 255,
 									"width": 538.556640625,
-									"height": 98
+									"height": 83
 								},
 								{
 									"_type": "UMLReceptionCompartmentView",
@@ -1265,11 +1271,30 @@
 									"model": {
 										"$ref": "AAAAAAFw0cKLsRTtVRM="
 									},
+									"subViews": [
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFw8g7LqHqWwSs=",
+											"_parent": {
+												"$ref": "AAAAAAFw0cKLsRT1dkU="
+											},
+											"model": {
+												"$ref": "AAAAAAFw8g7LRXqTAjM="
+											},
+											"font": "Arial;13;0",
+											"left": 541,
+											"top": 406,
+											"width": 178.09619140625,
+											"height": 13,
+											"text": "-file: File",
+											"horizontalAlignment": 0
+										}
+									],
 									"font": "Arial;13;0",
 									"left": 536,
 									"top": 401,
 									"width": 188.09619140625,
-									"height": 10
+									"height": 23
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -1292,7 +1317,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 541,
-											"top": 416,
+											"top": 429,
 											"width": 178.09619140625,
 											"height": 13,
 											"text": "+printTable()",
@@ -1327,7 +1352,7 @@
 											},
 											"font": "Arial;13;0",
 											"left": 541,
-											"top": 431,
+											"top": 444,
 											"width": 178.09619140625,
 											"height": 13,
 											"text": "+checkScore(score: int): String",
@@ -1336,7 +1361,7 @@
 									],
 									"font": "Arial;13;0",
 									"left": 536,
-									"top": 411,
+									"top": 424,
 									"width": 188.09619140625,
 									"height": 38
 								},
@@ -1416,8 +1441,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 215,
-									"top": 367,
+									"left": 207,
+									"top": 366,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 15,
@@ -1437,8 +1462,8 @@
 									},
 									"visible": null,
 									"font": "Arial;13;0",
-									"left": 202,
-									"top": 360,
+									"left": 194,
+									"top": 358,
 									"height": 13,
 									"alpha": 1.5707963267948966,
 									"distance": 30,
@@ -1458,8 +1483,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 242,
-									"top": 380,
+									"left": 232,
+									"top": 381,
 									"height": 13,
 									"alpha": -1.5707963267948966,
 									"distance": 15,
@@ -1479,7 +1504,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 205,
+									"left": 195,
 									"top": 387,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -1500,7 +1525,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 194,
+									"left": 184,
 									"top": 378,
 									"height": 13,
 									"alpha": 0.7853981633974483,
@@ -1521,8 +1546,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 228,
-									"top": 403,
+									"left": 216,
+									"top": 404,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 25,
@@ -1542,8 +1567,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 225,
-									"top": 348,
+									"left": 218,
+									"top": 346,
 									"height": 13,
 									"alpha": -0.5235987755982988,
 									"distance": 30,
@@ -1562,8 +1587,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 212,
-									"top": 344,
+									"left": 206,
+									"top": 342,
 									"height": 13,
 									"alpha": -0.7853981633974483,
 									"distance": 40,
@@ -1582,7 +1607,7 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 252,
+									"left": 244,
 									"top": 356,
 									"height": 13,
 									"alpha": 0.5235987755982988,
@@ -1628,7 +1653,7 @@
 								"$ref": "AAAAAAFw0bTfFxRx4RQ="
 							},
 							"lineStyle": 1,
-							"points": "207:423;251:338",
+							"points": "195:423;245:338",
 							"showVisibility": true,
 							"nameLabel": {
 								"$ref": "AAAAAAFw0csyLxW3H6w="
@@ -1932,6 +1957,97 @@
 							"headQualifiersCompartment": {
 								"$ref": "AAAAAAFw0cs+DBYEPj0="
 							}
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFw8lqr9YLBpMg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 32,
+							"top": 224,
+							"width": 131.72509765625,
+							"height": 129,
+							"text": "Wrestler.setName() should set the name from an array. the index will be set in the GameController class, and passed through the parameters"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFw8lwbj4OiASg=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 32,
+							"top": 128,
+							"width": 114.3896484375,
+							"height": 90,
+							"text": "Wrestler.attack() should randomly return an int between 1 and 3 inclusive"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFw8l1XQ4QcHhw=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 312,
+							"top": 520,
+							"width": 145,
+							"height": 90,
+							"text": "attack() and setName() are both created in Wrestler so we can demonstrate polymorphy in Player"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFw8l8tJIuEph0=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 56,
+							"top": 528,
+							"width": 129,
+							"height": 77,
+							"text": "Player.attack() should retun an int between 1 and 3 inclusive from a Scanner"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFw8mBjk4vqE1U=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 56,
+							"top": 608,
+							"width": 120.419921875,
+							"height": 77,
+							"text": "Player.setName() will set a name from a Scanner"
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFw8mDzrYz44L4=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 544,
+							"top": 472,
+							"width": 169,
+							"height": 103,
+							"text": "HighScore uses exceptions to check and see if a highscore file exists. if not it creates it. if so it will either print (printTable()) or update it (checkScore())."
+						},
+						{
+							"_type": "UMLNoteView",
+							"_id": "AAAAAAFw8mKJsY2PEOI=",
+							"_parent": {
+								"$ref": "AAAAAAFF+qBtyKM79qY="
+							},
+							"font": "Arial;13;0",
+							"left": 744,
+							"top": 360,
+							"width": 225,
+							"height": 129,
+							"text": "GameController creates an array of enemies and throws them at the player sequentially. basically it is the game loop. because the player and highScore objects are created in main, they must be passed to nearly every method, or the game will not be able to switch between states"
 						}
 					]
 				},
@@ -2074,7 +2190,7 @@
 									},
 									"name": "name",
 									"visibility": "private",
-									"type": "String"
+									"type": "int"
 								},
 								{
 									"_type": "UMLParameter",
@@ -2613,6 +2729,18 @@
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
 					"name": "HighScore",
+					"attributes": [
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFw8g7LRXqTAjM=",
+							"_parent": {
+								"$ref": "AAAAAAFw0cKLsRTtVRM="
+							},
+							"name": "file",
+							"visibility": "private",
+							"type": "File"
+						}
+					],
 					"operations": [
 						{
 							"_type": "UMLOperation",
@@ -2707,6 +2835,14 @@
 							"name": "displayUi"
 						}
 					]
+				},
+				{
+					"_type": "UMLInterface",
+					"_id": "AAAAAAFw8lSG8oDyCA8=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "hghfh"
 				}
 			]
 		}

@@ -8,6 +8,6 @@ public class Npc {
         return "Hugo";
     }
     public String getTagline() {
-        return "Hugo has entered the ring";
+        return "\nHugo has entered the ring";
     }
 }
