@@ -890,7 +890,7 @@
 											"font": "Arial;13;1",
 											"left": 445,
 											"top": 199,
-											"width": 306.0205078125,
+											"width": 528.556640625,
 											"height": 13,
 											"text": "GameController"
 										},
@@ -925,7 +925,7 @@
 									"font": "Arial;13;0",
 									"left": 440,
 									"top": 192,
-									"width": 316.0205078125,
+									"width": 538.556640625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFw0cJEtRTHlzU="
@@ -962,17 +962,34 @@
 											"font": "Arial;13;0",
 											"left": 445,
 											"top": 222,
-											"width": 306.0205078125,
+											"width": 528.556640625,
 											"height": 13,
-											"text": "-turnOrder: arrayList",
+											"text": "-enemyList: arrayList",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAFw8aXkknXeSgg=",
+											"_parent": {
+												"$ref": "AAAAAAFw0cJEtRTLk9M="
+											},
+											"model": {
+												"$ref": "AAAAAAFw8aXkMnXbRAU="
+											},
+											"font": "Arial;13;0",
+											"left": 445,
+											"top": 237,
+											"width": 528.556640625,
+											"height": 13,
+											"text": "-wrestlerIndex: int",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 440,
 									"top": 217,
-									"width": 316.0205078125,
-									"height": 23
+									"width": 538.556640625,
+									"height": 38
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -995,10 +1012,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 245,
-											"width": 306.0205078125,
+											"top": 260,
+											"width": 528.556640625,
 											"height": 13,
-											"text": "+displayHealth(playerHealth: int, npcHealth: int): void",
+											"text": "+displayHealth(playerName: String, npcName: String, playerHealth: int, npcHealth: int): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1012,10 +1029,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 260,
-											"width": 306.0205078125,
+											"top": 275,
+											"width": 528.556640625,
 											"height": 13,
-											"text": "+nextWrestler(): void",
+											"text": "+nextWrestler(): enemyList",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1029,10 +1046,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 275,
-											"width": 306.0205078125,
+											"top": 290,
+											"width": 528.556640625,
 											"height": 13,
-											"text": "+menu(): void",
+											"text": "+menu(player: Player, enemy: Npc): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1046,10 +1063,10 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 290,
-											"width": 306.0205078125,
+											"top": 305,
+											"width": 528.556640625,
 											"height": 13,
-											"text": "+newGame(): void",
+											"text": "+newGame(player: Player, enemy: Npc): void",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1063,8 +1080,8 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 305,
-											"width": 306.0205078125,
+											"top": 320,
+											"width": 528.556640625,
 											"height": 13,
 											"text": "+displayHighScores(): void",
 											"horizontalAlignment": 0
@@ -1080,17 +1097,17 @@
 											},
 											"font": "Arial;13;0",
 											"left": 445,
-											"top": 320,
-											"width": 306.0205078125,
+											"top": 335,
+											"width": 528.556640625,
 											"height": 13,
-											"text": "+combat()",
+											"text": "+combat(player: Player, enemy: Npc): void",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
 									"left": 440,
-									"top": 240,
-									"width": 316.0205078125,
+									"top": 255,
+									"width": 538.556640625,
 									"height": 98
 								},
 								{
@@ -1130,8 +1147,8 @@
 							"containerChangeable": true,
 							"left": 440,
 							"top": 192,
-							"width": 316.0205078125,
-							"height": 146,
+							"width": 538.556640625,
+							"height": 161,
 							"nameCompartment": {
 								"$ref": "AAAAAAFw0cJEtRTGkBM="
 							},
@@ -1176,8 +1193,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 544,
-											"top": -80,
+											"left": 32,
+											"top": 288,
 											"height": 13
 										},
 										{
@@ -1187,9 +1204,9 @@
 												"$ref": "AAAAAAFw0cKLsRTwhEY="
 											},
 											"font": "Arial;13;1",
-											"left": 797,
-											"top": 199,
-											"width": 80.57080078125,
+											"left": 541,
+											"top": 383,
+											"width": 178.09619140625,
 											"height": 13,
 											"text": "HighScore"
 										},
@@ -1201,8 +1218,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 544,
-											"top": -80,
+											"left": 32,
+											"top": 288,
 											"width": 73.67724609375,
 											"height": 13,
 											"text": "(from Model)"
@@ -1215,16 +1232,16 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 544,
-											"top": -80,
+											"left": 32,
+											"top": 288,
 											"height": 13,
 											"horizontalAlignment": 1
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 792,
-									"top": 192,
-									"width": 90.57080078125,
+									"left": 536,
+									"top": 376,
+									"width": 188.09619140625,
 									"height": 25,
 									"stereotypeLabel": {
 										"$ref": "AAAAAAFw0cKLsRTx+tg="
@@ -1249,9 +1266,9 @@
 										"$ref": "AAAAAAFw0cKLsRTtVRM="
 									},
 									"font": "Arial;13;0",
-									"left": 792,
-									"top": 217,
-									"width": 90.57080078125,
+									"left": 536,
+									"top": 401,
+									"width": 188.09619140625,
 									"height": 10
 								},
 								{
@@ -1274,11 +1291,11 @@
 												"$ref": "AAAAAAFw0cLe2BUgJ/8="
 											},
 											"font": "Arial;13;0",
-											"left": 797,
-											"top": 232,
-											"width": 80.57080078125,
+											"left": 541,
+											"top": 416,
+											"width": 178.09619140625,
 											"height": 13,
-											"text": "+loadFile()",
+											"text": "+printTable()",
 											"horizontalAlignment": 0
 										},
 										{
@@ -1290,19 +1307,37 @@
 											"model": {
 												"$ref": "AAAAAAFw0cMYxBUnS28="
 											},
+											"visible": false,
 											"font": "Arial;13;0",
-											"left": 797,
-											"top": 247,
-											"width": 80.57080078125,
+											"left": 541,
+											"top": 431,
+											"width": 178.09619140625,
 											"height": 13,
 											"text": "+saveFile()",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLOperationView",
+											"_id": "AAAAAAFw8doatnmxriI=",
+											"_parent": {
+												"$ref": "AAAAAAFw0cKLsRT2U7U="
+											},
+											"model": {
+												"$ref": "AAAAAAFw8doaVnmu/Fs="
+											},
+											"font": "Arial;13;0",
+											"left": 541,
+											"top": 431,
+											"width": 178.09619140625,
+											"height": 13,
+											"text": "+checkScore(score: int): String",
 											"horizontalAlignment": 0
 										}
 									],
 									"font": "Arial;13;0",
-									"left": 792,
-									"top": 227,
-									"width": 90.57080078125,
+									"left": 536,
+									"top": 411,
+									"width": 188.09619140625,
 									"height": 38
 								},
 								{
@@ -1316,8 +1351,8 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 272,
-									"top": -40,
+									"left": 16,
+									"top": 144,
 									"width": 92.01806640625,
 									"height": 10
 								},
@@ -1332,18 +1367,18 @@
 									},
 									"visible": false,
 									"font": "Arial;13;0",
-									"left": 272,
-									"top": -40,
+									"left": 16,
+									"top": 144,
 									"width": 10,
 									"height": 10
 								}
 							],
 							"font": "Arial;13;0",
 							"containerChangeable": true,
-							"left": 792,
-							"top": 192,
-							"width": 90.57080078125,
-							"height": 73,
+							"left": 536,
+							"top": 376,
+							"width": 188.09619140625,
+							"height": 88,
 							"nameCompartment": {
 								"$ref": "AAAAAAFw0cKLsRTwhEY="
 							},
@@ -2330,9 +2365,19 @@
 							"_parent": {
 								"$ref": "AAAAAAFw0cJEtRTDVi0="
 							},
-							"name": "turnOrder",
+							"name": "enemyList",
 							"visibility": "private",
 							"type": "arrayList"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAFw8aXkMnXbRAU=",
+							"_parent": {
+								"$ref": "AAAAAAFw0cJEtRTDVi0="
+							},
+							"name": "wrestlerIndex",
+							"visibility": "private",
+							"type": "int"
 						}
 					],
 					"operations": [
@@ -2350,9 +2395,9 @@
 									"_parent": {
 										"$ref": "AAAAAAFw0czXGhc6RRA="
 									},
-									"name": "playerHealth",
+									"name": "playerName",
 									"visibility": "private",
-									"type": "int"
+									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
@@ -2360,9 +2405,9 @@
 									"_parent": {
 										"$ref": "AAAAAAFw0czXGhc6RRA="
 									},
-									"name": "npcHealth",
+									"name": "npcName",
 									"visibility": "private",
-									"type": "int"
+									"type": "String"
 								},
 								{
 									"_type": "UMLParameter",
@@ -2373,6 +2418,24 @@
 									"name": "void",
 									"type": "void",
 									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8ZFryHPDka0=",
+									"_parent": {
+										"$ref": "AAAAAAFw0czXGhc6RRA="
+									},
+									"name": "playerHealth",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8Zfs6nSH94M=",
+									"_parent": {
+										"$ref": "AAAAAAFw0czXGhc6RRA="
+									},
+									"name": "npcHealth",
+									"type": "int"
 								}
 							]
 						},
@@ -2391,7 +2454,7 @@
 										"$ref": "AAAAAAFw0c7dHhoNQAM="
 									},
 									"name": "void",
-									"type": "void",
+									"type": "enemyList",
 									"direction": "return"
 								}
 							]
@@ -2413,6 +2476,28 @@
 									"name": "void",
 									"type": "void",
 									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8b8aE3gdE/w=",
+									"_parent": {
+										"$ref": "AAAAAAFw0dChoRxVq/g="
+									},
+									"name": "player",
+									"type": {
+										"$ref": "AAAAAAFw0bTfFxRvV2s="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8b8aFHgeS+o=",
+									"_parent": {
+										"$ref": "AAAAAAFw0dChoRxVq/g="
+									},
+									"name": "enemy",
+									"type": {
+										"$ref": "AAAAAAFw0bUAbxSZjYc="
+									}
 								}
 							]
 						},
@@ -2433,6 +2518,28 @@
 									"name": "void",
 									"type": "void",
 									"direction": "return"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8b+62XiUkdE=",
+									"_parent": {
+										"$ref": "AAAAAAFw0dCuGhyPfuw="
+									},
+									"name": "player",
+									"type": {
+										"$ref": "AAAAAAFw0bTfFxRvV2s="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8b+62niVwWA=",
+									"_parent": {
+										"$ref": "AAAAAAFw0dCuGhyPfuw="
+									},
+									"name": "enemy",
+									"type": {
+										"$ref": "AAAAAAFw0bUAbxSZjYc="
+									}
 								}
 							]
 						},
@@ -2462,7 +2569,40 @@
 							"_parent": {
 								"$ref": "AAAAAAFw0cJEtRTDVi0="
 							},
-							"name": "combat"
+							"name": "combat",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8c6qvXlZIAw=",
+									"_parent": {
+										"$ref": "AAAAAAFw8KiZG92wfJ0="
+									},
+									"name": "player",
+									"type": {
+										"$ref": "AAAAAAFw0bTfFxRvV2s="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8c6qvXlardk=",
+									"_parent": {
+										"$ref": "AAAAAAFw8KiZG92wfJ0="
+									},
+									"name": "enemy",
+									"type": {
+										"$ref": "AAAAAAFw0bUAbxSZjYc="
+									}
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8c7FPXmIRdc=",
+									"_parent": {
+										"$ref": "AAAAAAFw8KiZG92wfJ0="
+									},
+									"type": "void",
+									"direction": "return"
+								}
+							]
 						}
 					]
 				},
@@ -2480,7 +2620,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFw0cKLsRTtVRM="
 							},
-							"name": "loadFile"
+							"name": "printTable"
 						},
 						{
 							"_type": "UMLOperation",
@@ -2489,6 +2629,34 @@
 								"$ref": "AAAAAAFw0cKLsRTtVRM="
 							},
 							"name": "saveFile"
+						},
+						{
+							"_type": "UMLOperation",
+							"_id": "AAAAAAFw8doaVnmu/Fs=",
+							"_parent": {
+								"$ref": "AAAAAAFw0cKLsRTtVRM="
+							},
+							"name": "checkScore",
+							"parameters": [
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8dqEonnlF+A=",
+									"_parent": {
+										"$ref": "AAAAAAFw8doaVnmu/Fs="
+									},
+									"name": "score",
+									"type": "int"
+								},
+								{
+									"_type": "UMLParameter",
+									"_id": "AAAAAAFw8dqEonnmXCI=",
+									"_parent": {
+										"$ref": "AAAAAAFw8doaVnmu/Fs="
+									},
+									"type": "String",
+									"direction": "return"
+								}
+							]
 						}
 					]
 				},
