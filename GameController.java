@@ -14,14 +14,32 @@ public class GameController {
         //initialize the variables in a default constructor
         wrestlerIndex = 0;
         //the list of Npc objects to go into the enemyList ArrayList
-        Npc hugo = new Npc();
+        Npc stone = new Npc("The Stone");
+        enemyList.add(stone);
+        Npc pebble = new Npc("The Pebble");
+        enemyList.add(pebble);
+        Npc boulder = new Npc("The Boulder");
+        enemyList.add(boulder);
+        Npc ronA = new Npc("Savage Ron");
+        enemyList.add(ronA);
+        Npc morty = new Npc("The Mortician");
+        enemyList.add(morty);
+        Npc bulk = new Npc("Bulk Bogan");
+        enemyList.add(bulk);
+        Npc cain = new Npc("Cain");
+        enemyList.add(cain);
+        Npc stung = new Npc("Stung");
+        enemyList.add(stung);
+        Npc hugo = new Npc("Hugo Placeholder");
         enemyList.add(hugo);
-        Npc hugo2 = new Npc();
-        enemyList.add(hugo2);
-        Npc hugo3 = new Npc();
-        enemyList.add(hugo3);
-        Npc hugo4 = new Npc();
-        enemyList.add(hugo4);
+        Npc andy = new Npc("Andre the Little Person");
+        enemyList.add(andy);
+        Npc g = new Npc("Tripple G");
+        enemyList.add(g);
+        Npc ronB = new Npc("Ron SeeYa");
+        enemyList.add(ronB);
+        Npc vinny = new Npc("Vince White");
+        enemyList.add(vinny);
     }
 
     /** Methods */
@@ -102,12 +120,37 @@ public class GameController {
                 menu(player, highScore);
             }
             displayHealth(playerName, enemyName, playerHealth, enemyHealth);
-            //int playerChoice = player.attack();
-            //int enemyChoice = enemy.attack();
+            int playerChoice = player.attack();
+            int enemyChoice = enemy.attack();
             // rock paper scissors code here
+                //rock is 1, paper is 2, scissors is 3
+            switch (playerChoice - enemyChoice) {
+                case -2:
+                    //player wins
+                    enemyHealth -= 10;
+                    break;
+                case -1:
+                    //player loses
+                    playerHealth -= 5;
+                    break;
+                case 0:
+                    //tie
+                    enemyHealth -= 5;
+                    break;
+                case 1:
+                    //win
+                    enemyHealth -= 10;
+                    break;
+                case 2:
+                    //lose
+                    playerHealth -= 5;
+                    break;
+            }
             enemyHealth -= 5; /** This is for debugging while
              rock paper scissors is unfinished */
         }
+        //set the player health
+        player.setHealth(playerHealth);
         wrestlerIndex += 1;
         newGame(player, highScore);
     }
