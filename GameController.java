@@ -33,6 +33,7 @@ public class GameController {
         Npc hugo = new Npc("Hugo Placeholder");
         enemyList.add(hugo);
         Npc andy = new Npc("Andre the Little Person");
+        andy.setTagline("Anybody want a peanut?");
         enemyList.add(andy);
         Npc g = new Npc("Tripple G");
         enemyList.add(g);
